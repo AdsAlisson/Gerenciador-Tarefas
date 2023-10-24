@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta> <http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page <Title</title>
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+<h1>Gerenciador</h1>
+
+<button onclick="exibirPendentes()">Pendentes</button>
+<button onclick="exibirConcluidas()">Concluidas</button>
+<button onclick="criarTarefas()">+</button>
+
+<div id="painel"></div>
+
+
+    <script>
+        let pendentes = [];
+        let concluidas = [];
+
+        function exibirPendentes;){
+           painel.innerHTML = "";
+           for (let i = 0; i < pendentes,length; i++) {
+               painel.innerHTML += `input type="checkbox">${pendentes[i]}<br>`;
+           }
+}
+
+        function exibirConcluidas(){
+            alert("concluidas!");
+}
+
+        function criarTarefas(){
+            alert("nova tarefa!");
+            let nova = prompt("informe a tarefa:");
+            if (nova == "") {
+                alert("Não pode adicionar uma tarefa vazia.");
+            } else 
+                pendentes.push(nova);
+
+}
+
+    </script>
+    
+</body>
+</html>
